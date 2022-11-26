@@ -1,0 +1,36 @@
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo{
+    width:auto;
+    height:30px;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  .nav-link{
+    transition: 0.3s ease-out;
+  }
+  .nav-link:hover{
+    color: #C3A508;
+  }
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+  }

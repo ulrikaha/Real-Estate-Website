@@ -1,0 +1,41 @@
+.hero {
+   
+    height: 70vh;
+    background: url('/images/john-fornander-y3_AHHrxUBY-unsplash.jpg') no-repeat bottom center;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10 20vw;
+    margin: top 15px;
+    color: black;
+
+    #start {
+    display:flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.1);
+    padding:1rem;
+    border-radius: 100px; 
+    position:fixed;
+    margin-bottom: 30rem;
+    }
+    
+    
+    h1 {
+       font-family:Verdana, Geneva, Tahoma, sans-serif;
+       font-size:1rem;
+       text-transform: uppercase; 
+       text-align: center;
+       color:black;
+       
+    
+       &::before, &::after {
+        content: '';
+        position: absolute;
+       
+        height: 80%;
+        width: 50%;
+    }
+    
+        }
+    }
