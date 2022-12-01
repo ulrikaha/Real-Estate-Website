@@ -28,4 +28,25 @@
    .nav-menu.active{
       left: 0;
     }
+   
+  }
+
+  @media (min-width:700px){
+    .container-emp{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .box-emp{
+      max-width: 700px;
+    }
+    .img-p{
+      float:left;
+    }
+    .heading-emp , 
+    .text-emp{
+      float:right;
+      width: 50%;
+    }
   }

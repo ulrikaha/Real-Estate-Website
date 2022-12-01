@@ -1,5 +1,6 @@
     footer {
-        position:absolute;
+        display: block;
+        position:relative;
         background: #0b3541;
         color:#C3A508;
         height:auto;
@@ -64,12 +65,8 @@
             :hover {
             color: #C3A508; 
         }
-           .footer-bottom {
-            background:#3a524a;
-            width: 100vw;
-            padding:20px 0;
-            text-align: center;
-           }
+        
+           
              p {
             font-size: 14px;
             word-spacing:2px;

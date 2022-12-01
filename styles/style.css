@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .navbar {
+  position: -webkit-sticky;
+  position: sticky;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -42,7 +44,7 @@
 
 .hero {
   height: 70vh;
-  background: url("/images/john-fornander-y3_AHHrxUBY-unsplash.jpg") no-repeat bottom center;
+  background: url("/images/p_slider-01.jpeg") no-repeat bottom center;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -50,15 +52,6 @@
   padding: 10 20vw;
   margin: top 15px;
   color: black;
-}
-.hero #start {
-  display: flex;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  border-radius: 100px;
-  position: fixed;
-  margin-bottom: 30rem;
 }
 .hero h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -75,7 +68,8 @@
 }
 
 footer {
-  position: absolute;
+  display: block;
+  position: relative;
   background: #0b3541;
   color: #C3A508;
   height: auto;
@@ -135,12 +129,6 @@ footer .socials li a i {
 footer .socials li a i :hover {
   color: #C3A508;
 }
-footer .socials li a i .footer-bottom {
-  background: #3a524a;
-  width: 100vw;
-  padding: 20px 0;
-  text-align: center;
-}
 footer .socials li a i p {
   font-size: 14px;
   word-spacing: 2px;
@@ -179,6 +167,184 @@ footer .socials li a i p {
     left: 0;
   }
 }
+@media (min-width: 700px) {
+  .container-emp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .box-emp {
+    max-width: 700px;
+  }
+  .img-p {
+    float: left;
+  }
+  .heading-emp,
+.text-emp {
+    float: right;
+    width: 50%;
+  }
+}
+.box-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.box-plan #plan {
+  max-height: 300px;
+  max-width: 250px;
+  box-shadow: 0 0 10px #777777;
+}
+
+hr {
+  display: block;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  overflow: hidden;
+  width: 20rem;
+}
+
+.person {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #3a524a;
+  font-weight: 60;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-emp {
+  width: 100%;
+}
+
+.box-emp {
+  max-width: 350px;
+  padding: 10px;
+  border: 3px solid #C3A508;
+  margin: 10px auto;
+}
+
+.img-p {
+  max-width: 300px;
+  height: 300px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5px;
+}
+
+.heading-emp, .text-emp {
+  width: 100%;
+  padding: 0 5px;
+  min-width: 300px;
+}
+.heading-emp p, .text-emp p {
+  margin: 10px 0;
+}
+.heading-emp a, .text-emp a {
+  display: inline-block;
+  background: #0b3541;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.contact-form {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 5px;
+  background: lightgray;
+  padding: 50px;
+  box-shadow: 0 0 10px #777777;
+}
+.contact-form input[type=text], .contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contact-form input[type=tel], .contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contact-form input[type=submit] {
+  width: auto;
+  background: #0b3541;
+  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0 0 10px #777777;
+}
+
+.socials-2 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 3rem 0;
+}
+.socials-2 li {
+  margin: 0 12px;
+}
+.socials-2 li a {
+  text-decoration: none;
+  color: #0b3541;
+  font-size: 2rem;
+}
+.socials-2 li a a:hover {
+  cursor: pointer;
+}
+
+.building {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.building #office {
+  height: 60%;
+  width: 60%;
+}
+
+.contact-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-2 {
+  margin: 5px auto;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.contact-2 li {
+  font-size: 17px;
+  font-family: "Montserrat";
+  margin: 10px 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -221,4 +387,84 @@ h2 {
   font-family: "Montserrat";
   font-size: 14px;
   margin: 1rem auto;
+}
+
+.h1-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3a524a;
+  font-size: 25px;
+  font-weight: 70;
+  margin-top: 20px;
+}
+
+.h2-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0, 5rem;
+  color: #3a524a;
+  font-weight: 50;
+  font-size: 20px;
+}
+
+.h3-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0, 5rem;
+  color: #3a524a;
+  font-weight: 50;
+  font-size: 17px;
+}
+
+.p-text {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Montserrat";
+  margin: 50px;
+  margin-top: 10px;
+}
+
+#active {
+  color: #C3A508;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+}
+.cta .ctabutton {
+  display: block;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  background-color: #0b3541;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #222;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  box-shadow: 2px 2px 3px #222;
 }/*# sourceMappingURL=style.css.map */

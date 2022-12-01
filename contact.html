@@ -9,11 +9,13 @@
     <title>Dream Estate - Contact us</title>
 </head>
 <body>
-    <main>
+
+    <!---Header and nav content--->
+
     <header>
         <div class="container"> 
            <nav class="navbar">
-            <img src=".//images/DE-Logo Transparent.png" class="nav-logo" alt="dream estate logo">
+            <img src=".//images/dream-estate-logo.png" class="nav-logo" alt="dream estate logo">
               <ul class="nav-menu">
                  <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -22,13 +24,13 @@
                     <a href="properties.html" class="nav-link">Properties</a>
                  </li>
                  <li class="nav-item">
-                    <a href="recommendations.html" class="nav-link">Recommendations</a>
+                    <a href="client-testimonials.html" class="nav-link">Client Testimonials</a>
                  </li>
                  <li class="nav-item">
                     <a href="about.html" class="nav-link">About us</a>
                  </li>
                  <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact us</a>
+                    <a id="active" href="contact.html" class="nav-link">Contact us</a>
                  </li>
               </ul>
               <div class="hamburger">
@@ -39,6 +41,115 @@
            </nav>
         </div>
      </header>  
-     </main>
+ <main>
+   <h1 class="h1-content">Contact us</h1>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <h2 class="h2-content">Any questions? Feel free to contact us</h2>
+
+   <!---Contact form-->
+
+<br>
+<div class="contact-form">
+   <form>
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Type your name">
+
+<label for="tel">Phone</label>
+<input type="tel" id="tel" placeholder="Type your phone">
+
+<label for="email">Email</label>
+<input type="text" id="email" placeholder="Type your email">
+
+<label for="contact">Contact</label>
+<select id="contact">
+   <option value="option">Select contact option</option>
+   <option value="option">Buying a propertie</option>
+   <option value="option">Selling a propertie</option>
+   <option value="option">Questions about us</option>
+   <option value="option">Questions about the website</option>
+</select>
+<label for="comments"></label>
+<textarea rows="10" cols="37" id="comments" placeholder="Comments"></textarea>
+<input type="Submit" value="Send">
+   </form>
+</div>
+<br>
+<br>
+<div class="contact-info">
+   <ul class="socials-2">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+  </ul>
+  </div>
+
+  <!--Img of office building-->
+<div class="building">
+<img src="./images/office-building.jpeg" id="office" alt="Dream Estate office building in Marbella">
+</div>
+<br>
+<hr>
+
+<!--Contact info-->
+<div class="contact-1">
+   <ul class="contact-2">
+      <li>Adress: Avd. Bulevar Príncipe Alfonso de Hohenlohe s/n
+         Residencial Casablanca,15120, Golden Mile, 29602 Marbella, Málaga </li>
+        
+      <li>Phone: +34 654 679 00</li>
+      
+      <li>Email: contact@dream-estate.com</li>
+     </ul> 
+</div>
+</main>
+<hr>
+<br>
+
+   <!---Footer content-->
+
+<footer>
+   <div class="logo-1">
+       <img src="./images/dream-estate-logo.png" alt="dream estate logo">
+   </div>
+   
+   <div class="footer-content">
+      <ul class="nav-links-footer">
+       <li class="nav-link2">
+           <a href="index.html">Home</a>
+       </li>
+       <li class="nav-link2">
+           <a href="properties.html">Properties</a>
+       </li>
+       <li class="nav-link2">
+           <a href="client-testimonials.html">Client testimonials</a>
+       </li>
+       <li class="nav-link2">
+           <a href="about.html">About us</a>
+       </li>
+       <li class="nav-link2">
+           <a href="contact.html">Contact us</a>
+       </li>
+   </ul>
+
+       <p>copyright &copy; 2022 Dream Estate</p>
+   <ul class="socials">
+       <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+       <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+       <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+       <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+       <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+   </ul>
+   </div>
+</footer>   
+
+
+
+ <script src="main.js"></script>  
 </body>
 </html>

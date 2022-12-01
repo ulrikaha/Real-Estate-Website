@@ -1,0 +1,96 @@
+.contact-form{
+    max-width: 300px;
+    margin:auto;
+    border-radius:5px;
+    background: lightgray;
+    padding:50px;
+    -moz-box-shadow:0 0 10px #777777;
+    -webkit-box-shadow: 0 0 10px #777777;
+    box-shadow: 0 0 10px #777777;
+
+    input[type=text] , select {
+        width: 100%;
+        padding:12px;
+        margin:8px;
+        display:inline-block;
+        border:1px solid black;
+        border-radius:4px;
+        box-sizing:border-box;
+}
+input[type=tel] , select {
+    width: 100%;
+    padding:12px;
+    margin:8px;
+    display:inline-block;
+    border:1px solid black;
+    border-radius:4px;
+    box-sizing:border-box;
+}
+
+            input[type=submit]{
+            width: auto;
+            background:$first-color;
+            color:white;
+            padding:12px 15px;
+            margin:10px 0;
+            border:none;
+            -moz-box-shadow:0 0 10px #777777;
+            -webkit-box-shadow: 0 0 10px #777777;
+            box-shadow: 0 0 10px #777777;
+        }
+}
+
+.socials-2{
+    list-style:none;
+     display:flex;
+     align-items: center;
+     justify-content:center; 
+     margin: 2rem 0 3rem 0;
+ 
+     li {
+         margin:0 12px;
+     
+     a {
+         text-decoration:none;
+         color:$first-color;
+         font-size:2rem;
+ 
+         a:hover{
+         cursor:pointer;
+         }
+     
+        
+   }
+ }
+     }
+
+.building{
+  display:flex;
+  align-items:center;
+  justify-content:center;  
+  margin-top: 30px;
+  margin-bottom:40px;
+
+  #office{
+    height:60%;
+    width:60%;
+  }
+  }
+
+.contact-1{
+   display:flex;
+   align-items: center;
+    justify-content: center;  
+}
+
+  .contact-2{
+    margin:5px auto;
+    margin-left:10px;
+    padding-top:10px;
+
+    li{
+        font-size:$h2-heading;
+        font-family:$font-1;
+        margin:10px 0;
+    }
+  }
