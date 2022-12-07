@@ -423,6 +423,10 @@ h2 {
 }
 
 .p-text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
   display: block;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
@@ -432,12 +436,8 @@ h2 {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
-  font-size: 16px;
   line-height: 1.8em;
   letter-spacing: 0.4px;
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Montserrat";
   margin: 50px;
   margin-top: 10px;
 }

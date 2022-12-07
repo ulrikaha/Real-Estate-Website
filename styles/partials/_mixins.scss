@@ -1,0 +1,18 @@
+@mixin p-text{
+    font: {
+        size: $p-text;
+        family: $font-1;
+        weight: 400;
+        style: normal;
+        }
+        display:block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        line-height: 1.8em;
+        letter-spacing: .4px;
+        margin:50px;
+        margin-top:10px;
+
+}
