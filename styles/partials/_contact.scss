@@ -72,8 +72,11 @@ input[type=tel] , select {
   margin-bottom:40px;
 
   #office{
-    height:60%;
-    width:60%;
+    @include box-shadow{
+    height:50%;
+    width:50%; 
+    }
+   
   }
   }
 
