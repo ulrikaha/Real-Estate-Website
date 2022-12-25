@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import"partials/navbar";
 @import"partials/variables";
+@import"partials/navbar";
 @import"partials/hero";
 @import"partials/footer";
 @import"partials/media";
@@ -10,114 +10,112 @@
 @import"partials/contact";
 @import"partials/mixins";
 
-*{
-    padding: 0;
-    margin: 0;
-  }
-
-header{
-    background-color: $first-color;
-  }
-
-  li{
-    list-style: none;
-  }
-  
-  a{
-    color: white;
-    text-decoration: none;
-    font-size: $h2-heading;
-    font-family:$font-2;
-    
-  }
-  
-
-  h2{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-family:$font-2;
-    font-size:1rem;
-    }
-
-    .content{
-     width: 80%;
-     margin: 2rem auto;
-    
-     p {
-      
-      font-family: $font-1;
-      font-size:14px;
-      margin: 1rem auto;
-   }
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.h1-content{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  font-family:$font-2;
-  color:$third-color;
-  font-size:25px;
-  font-weight: 70;
-  margin-top:20px;
+body {
+  position: relative;
 }
 
- .h2-content{
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $first-color;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: $h2-heading;
+  font-family: $font-2;
+
+}
+
+
+h2 {
   display: flex;
   align-content: center;
   justify-content: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size:0,5rem;
-  color:#3a524a;
+  font-family: $font-2;
+  font-size: 1rem;
+}
+
+.content {
+  width: 80%;
+  margin: 2rem auto;
+
+  p {
+
+    font-family: $font-1;
+    font-size: 14px;
+    margin: 1rem auto;
+  }
+}
+
+.h1-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-2;
+  color: $third-color;
+  font-size: 25px;
+  font-weight: 70;
+  margin-top: 20px;
+}
+
+.h2-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0, 5rem;
+  color: #3a524a;
   font-weight: 50;
   font-size: 20px;
-    }
-
-    .h3-content{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:0,5rem;
-    color:#3a524a;
-    font-weight: 50;
-    font-size: 17px;
-    }
-
-  .p-text {
-  @include p-text{
-
-  }
-}
-  
-.active{
-  color:$second-color;
 }
 
-  .cta{
-    display: flex;
+.h3-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0, 5rem;
+  color: #3a524a;
+  font-weight: 50;
+  font-size: 17px;
+}
+
+.p-text {
+  @include p-text
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+
+  .ctabutton {
+    display: block;
     justify-content: center;
-
-
-
-  .ctabutton{
-    display:block;
-    justify-content: center;
-    width:140px;
-    height:40px;
-    background-color:$first-color;
-    border-radius:4px;
+    width: 140px;
+    height: 40px;
+    background-color: $first-color;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    line-height:40px;
-    font-size:1.2rem;
-    color:white;
+    line-height: 40px;
+    font-size: 1.2rem;
+    color: white;
     font-weight: bold;
-    text-shadow:2px 2px 3px #222;
-    letter-spacing:1px;
+    text-shadow: 2px 2px 3px #222;
+    letter-spacing: 1px;
     font-family: $font-1;
-    box-shadow:2px 2px 3px #222;
-
-}
+    box-shadow: 2px 2px 3px #222;
   }
+}

@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.container {
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .navbar {
-  position: -webkit-sticky;
-  position: sticky;
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +27,9 @@
 .nav-link {
   transition: 0.3s ease-out;
 }
-
+.nav-link.active {
+  color: #C3A508;
+}
 .nav-link:hover {
   color: #C3A508;
 }
@@ -324,8 +330,8 @@ hr {
   margin-bottom: 40px;
 }
 .building #office {
-  height: 60%;
-  width: 60%;
+  height: 50%;
+  width: 50%;
 }
 
 .contact-1 {
@@ -350,7 +356,14 @@ hr {
   margin: 0;
 }
 
+body {
+  position: relative;
+}
+
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #0b3541;
 }
 
@@ -363,12 +376,6 @@ a {
   text-decoration: none;
   font-size: 17px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.container {
-  max-width: 1224px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 h2 {
@@ -440,10 +447,6 @@ h2 {
   letter-spacing: 0.4px;
   margin: 50px;
   margin-top: 10px;
-}
-
-#active {
-  color: #C3A508;
 }
 
 .cta {

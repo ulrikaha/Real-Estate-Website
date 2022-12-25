@@ -72,12 +72,9 @@ input[type=tel] , select {
   margin-bottom:40px;
 
   #office{
-    @include box-shadow{
-    height:50%;
-    width:50%; 
+  height:50%;
+  width:50%; 
     }
-   
-  }
   }
 
 .contact-1{
